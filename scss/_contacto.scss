@@ -1,0 +1,45 @@
+/*MIXIN*/
+@mixin botones($FondoColor, $ColorLetra) {
+    background-color: $FondoColor;
+    color: $ColorLetra;
+    width: 240px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 20px;
+    padding: 90px;     
+}
+.formulario{
+    display:inline-block;
+    padding: 30px;
+    background-color: orange;
+    margin: 55px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: solid  grey 15px;
+}
+.mapa{
+    margin-right: 100px;
+    padding: 30px;
+}
+
+.cajaform:focus{
+    font-size: 25px;
+}
+
+.botonEnviar{
+    @include botones(red, yellow);
+}
+
+.botonLimpiar{
+    @include botones(blue,white)
+}

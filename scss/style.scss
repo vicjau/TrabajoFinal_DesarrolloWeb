@@ -1,0 +1,76 @@
+@import"./index";
+@import"./contacto";
+@import"./nosotros";
+@import"./productos";
+@import"./servicios";
+@import"./footer";
+@import"./mediaqueries";
+
+/*MIXIN*/
+@mixin botones($FondoColor, $ColorLetra) {
+    background-color: $FondoColor;
+    color: $ColorLetra;
+    width: 240px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+/*EXTEND*/
+.h2gnrl{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*TITULO*/
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: rgb(212, 209, 209);;
+    text-align: center;
+    background-image: linear-gradient(to left,#fc4a1a,#f7b733);
+}
+
+/*MENU DE NAVEGACION*/
+.navbar{
+    margin: 0;
+    padding: 0;
+}
+#navbarNav{
+    justify-content: center;
+    li{
+        padding: 20px;
+    }
+    a{
+        color: rgb(212, 209, 209);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 20px;  
+    }
+    a:hover{
+        color: rgb(245, 170, 31);  
+    }
+
+}
+
+/*BODY*/
+body{
+    background-color: rgb(212, 209, 209);
+}
+
+
+
+
+
+
+
+
+
+
+
+

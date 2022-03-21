@@ -1,0 +1,46 @@
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "img_servicios img_servicios img_servicios"
+                        "catering catering catering"
+                        "lista1 lista2 lista3";
+    margin: 10px;
+    padding: 50px;
+
+    img{
+        width: 80%;
+        padding: 30px; 
+    }
+
+    div{
+        display: flex;
+        justify-content: center;
+    }
+
+    h2{
+        @extend .h2gnrl;
+        font-size: 50px;
+        padding: 20px;
+    }
+
+    li{
+        font-size: 25px;
+        padding: 10px
+    }
+}
+.img_servicios{
+    grid-area: img_servicios;
+}
+.catering{
+    grid-area: catering;
+}
+.lista1{
+    grid-area: lista1;
+}
+.lista2{
+    grid-area: lista2;
+}
+.lista3{
+    grid-area: lista3;
+}
+

@@ -1,0 +1,323 @@
+/*MIXIN*/
+.contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 20px;
+  padding: 90px; }
+
+.formulario {
+  display: inline-block;
+  padding: 30px;
+  background-color: orange;
+  margin: 55px;
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  border: solid  grey 15px; }
+
+.mapa {
+  margin-right: 100px;
+  padding: 30px; }
+
+.cajaform:focus {
+  font-size: 25px; }
+
+.botonEnviar {
+  background-color: red;
+  color: yellow;
+  width: 240px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px; }
+
+.botonLimpiar {
+  background-color: blue;
+  color: white;
+  width: 240px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px; }
+
+.nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 30px; }
+
+.nosotros img {
+  width: 600px;
+  height: 600px; }
+
+.nosotrosTexto {
+  max-width: 700px; }
+  .nosotrosTexto h2 {
+    font-size: 70px;
+    padding: 40px; }
+  .nosotrosTexto p {
+    font-size: 25px;
+    padding: 30px; }
+
+.productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "panaderia_imagen panaderia " "confiteria confiteria_imagen" "pasteleria_imagen pasteleria" "salado salado_imagen"; }
+  .productos div {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 25px; }
+  .productos img {
+    height: 90%;
+    width: 90%; }
+  .productos h2 {
+    padding: 100px;
+    font-size: 75px; }
+
+.panaderia_imagen {
+  grid-area: panaderia_imagen; }
+
+.panaderia {
+  grid-area: panaderia; }
+
+.confiteria {
+  grid-area: confiteria; }
+
+.confiteria_imagen {
+  grid-area: confiteria_imagen; }
+
+.pasteleria_imagen {
+  grid-area: pasteleria_imagen; }
+
+.pasteleria {
+  grid-area: pasteleria; }
+
+.salado {
+  grid-area: salado; }
+
+.salado_imagen {
+  grid-area: salado_imagen; }
+
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img_servicios img_servicios img_servicios" "catering catering catering" "lista1 lista2 lista3";
+  margin: 10px;
+  padding: 50px; }
+  .servicios img {
+    width: 80%;
+    padding: 30px; }
+  .servicios div {
+    display: flex;
+    justify-content: center; }
+  .servicios h2 {
+    font-size: 50px;
+    padding: 20px; }
+  .servicios li {
+    font-size: 25px;
+    padding: 10px; }
+
+.img_servicios {
+  grid-area: img_servicios; }
+
+.catering {
+  grid-area: catering; }
+
+.lista1 {
+  grid-area: lista1; }
+
+.lista2 {
+  grid-area: lista2; }
+
+.lista3 {
+  grid-area: lista3; }
+
+footer {
+  background: #ff0303;
+  color: #d4d1d1;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  font-size: 20px; }
+  footer a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 20px; }
+
+@media only screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0; }
+  /*TITULO*/
+  .titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #d4d1d1;
+    text-align: center;
+    background-image: linear-gradient(to left, #fc4a1a, #f7b733); }
+  /*BODY*/
+  body {
+    background-color: #d4d1d1; }
+  /*NOSOTROS*/
+  .nosotros {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px; }
+  .nosotros img {
+    width: 400px;
+    height: 400px; }
+  .nosotrosTexto {
+    max-width: 600px; }
+  .nosotrosTexto h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 40px; }
+  .nosotrosTexto p {
+    font-size: 25px;
+    padding: 30px; }
+  /*PRODUCTOS*/
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "panaderia" "panaderia_imagen" "confiteria" "confiteria_imagen" "pasteleria" "pasteleria_imagen" "salado" "salado_imagen"; }
+  .productos {
+    justify-content: center; }
+  .panaderia {
+    grid-area: panaderia; }
+  .panaderia_imagen {
+    grid-area: panaderia_imagen; }
+  .confiteria {
+    grid-area: confiteria; }
+  .confiteria_imagen {
+    grid-area: confiteria_imagen; }
+  .pasteleria {
+    grid-area: pasteleria; }
+  .pasteleria_imagen {
+    grid-area: pasteleria_imagen; }
+  .salado {
+    grid-area: salado; }
+  .salado_imagen {
+    grid-area: salado_imagen; }
+  .productos div {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 25px; }
+  .productos div img {
+    height: 60%;
+    width: 60%; }
+  .productos div h2 {
+    padding: 100px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  /*SERVICIOS*/
+  .servicios {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "img_servicios" "catering" "lista1" "lista2" "lista3"; }
+  .servicios {
+    justify-content: center; }
+  .img_servicios {
+    grid-area: img_servicios; }
+  .catering {
+    grid-area: catering; }
+  .lista1 {
+    grid-area: lista1; }
+  .lista2 {
+    grid-area: lista2; }
+  .lista3 {
+    grid-area: lista3; }
+  .servicios img {
+    width: 100%; }
+  .servicios h2 {
+    font-size: 20px;
+    padding: 20px; }
+  .servicios li {
+    font-size: 15px;
+    padding: 20px; }
+  /*CONTACTO*/
+  .contacto {
+    display: grid;
+    grid-template-areas: "mapa" "formulario"; }
+  .contacto {
+    justify-content: center; }
+  .mapa {
+    grid-area: mapa; }
+  .formulario {
+    grid-area: formulario; }
+  .formulario {
+    background-color: orange;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: solid  grey 5px; }
+  .cajaform:focus {
+    font-size: 10px; }
+  .boton {
+    background-color: #7a7676;
+    width: 100px;
+    padding: 10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    color: white; }
+  .boton:hover {
+    background-color: black; }
+  /*FOOTER*/
+  footer {
+    background: #ff0303;
+    color: #d4d1d1;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 15px; }
+  footer a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 15px; } }
+
+/*MIXIN*/
+/*EXTEND*/
+.h2gnrl, .nosotrosTexto h2, .productos h2, .servicios h2 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+/*TITULO*/
+.titulo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  color: #d4d1d1;
+  text-align: center;
+  background-image: linear-gradient(to left, #fc4a1a, #f7b733); }
+
+/*MENU DE NAVEGACION*/
+.navbar {
+  margin: 0;
+  padding: 0; }
+
+#navbarNav {
+  justify-content: center; }
+  #navbarNav li {
+    padding: 20px; }
+  #navbarNav a {
+    color: #d4d1d1;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px; }
+  #navbarNav a:hover {
+    color: #f5aa1f; }
+
+/*BODY*/
+body {
+  background-color: #d4d1d1; }

@@ -1,0 +1,54 @@
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "panaderia_imagen panaderia "
+                        "confiteria confiteria_imagen"
+                        "pasteleria_imagen pasteleria"
+                        "salado salado_imagen";
+
+    div{
+        display: flex;
+        justify-content:center ;
+        padding: 30px;
+        margin: 25px;
+    }
+
+    img{
+        height: 90%; 
+        width: 90%;
+    }
+
+    h2{
+        @extend .h2gnrl;
+        padding: 100px;
+        font-size: 75px;
+    }
+}
+
+.panaderia_imagen{
+    grid-area: panaderia_imagen;
+}
+.panaderia{
+    grid-area: panaderia;
+}
+.confiteria{
+    grid-area: confiteria;
+}
+.confiteria_imagen{
+    grid-area: confiteria_imagen;
+}
+.pasteleria_imagen{
+    grid-area: pasteleria_imagen;
+}
+.pasteleria{
+    grid-area: pasteleria;
+}
+.salado{
+    grid-area: salado;
+}
+.salado_imagen{
+    grid-area: salado_imagen;
+}
+
+
+

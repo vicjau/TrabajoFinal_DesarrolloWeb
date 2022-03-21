@@ -1,0 +1,203 @@
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+/*TITULO*/
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(212, 209, 209);;
+    text-align: center;
+    background-image: linear-gradient(to left,#fc4a1a,#f7b733);
+}
+
+
+/*BODY*/
+body{
+    background-color: rgb(212, 209, 209); 
+}
+    
+
+/*NOSOTROS*/
+    .nosotros{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        margin: 30px;
+    }
+    .nosotros img{
+        width: 400px;
+        height: 400px;
+    }
+    .nosotrosTexto{
+        max-width: 600px;
+    }
+    .nosotrosTexto h2{
+        font-size: 50px;
+        text-align: center;
+        padding: 40px;
+    }
+    .nosotrosTexto p{
+        font-size: 25px;
+        padding: 30px;
+    }
+
+/*PRODUCTOS*/
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "panaderia"
+                        "panaderia_imagen"
+                        "confiteria"
+                        "confiteria_imagen"
+                        "pasteleria"
+                        "pasteleria_imagen"
+                        "salado"
+                        "salado_imagen";
+}
+.productos{
+    justify-content: center;
+}
+.panaderia{
+    grid-area: panaderia;
+}
+.panaderia_imagen{
+    grid-area: panaderia_imagen;
+}
+
+.confiteria{
+    grid-area: confiteria;
+}
+.confiteria_imagen{
+    grid-area: confiteria_imagen;
+}
+.pasteleria{
+    grid-area: pasteleria;
+}
+.pasteleria_imagen{
+    grid-area: pasteleria_imagen;
+}
+.salado{
+    grid-area: salado;
+}
+.salado_imagen{
+    grid-area: salado_imagen;
+}
+
+.productos div{
+    display: flex;
+    justify-content:center ;
+    padding: 30px;
+    margin: 25px;
+}
+.productos div img{
+    height: 60%; 
+    width: 60%;
+    
+}
+.productos div h2{
+    padding: 100px;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+/*SERVICIOS*/
+    .servicios{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "img_servicios"
+                            "catering"
+                            "lista1"
+                            "lista2"
+                            "lista3";
+    
+    }
+    .servicios{
+        justify-content: center;
+    }
+    .img_servicios{
+        grid-area: img_servicios;
+    }
+    .catering{
+        grid-area: catering;
+    }
+    .lista1{
+        grid-area: lista1;
+    }
+    .lista2{
+        grid-area: lista2;
+    }
+    .lista3{
+        grid-area: lista3;
+    }
+    .servicios img{
+        width: 100%
+    }
+    .servicios h2{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .servicios li{
+        font-size: 15px;
+        padding: 20px;
+    }
+
+/*CONTACTO*/
+    .contacto{
+        display: grid;
+        grid-template-areas: "mapa"
+                            "formulario";
+    }
+    .contacto{
+        justify-content: center;
+    }
+    .mapa{
+        grid-area: mapa;
+    }
+    .formulario{
+        grid-area: formulario;
+    }
+    .formulario{
+        background-color: orange;
+        justify-content: center;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        border: solid  grey 5px;
+    }
+    .cajaform:focus{
+        font-size: 10px;
+    }
+    .boton{
+        background-color: rgb(122, 118, 118);
+        width: 100px;
+        padding: 10px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 10px;
+        color: white;
+    }
+    .boton:hover{
+        background-color: black;
+    }
+    
+
+/*FOOTER*/
+    footer{
+        background:rgb(255, 3, 3);
+        color: rgb(212, 209, 209);
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        font-size: 15px;
+    }
+    footer a{
+        text-decoration: none;
+        color: yellow;
+        font-size: 15px;
+    }
+    
+}

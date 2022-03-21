@@ -1,0 +1,28 @@
+.nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px;
+}
+.nosotros img{
+    width: 600px;
+    height: 600px;
+}
+
+.nosotrosTexto{
+    max-width: 700px;
+
+    h2{
+        @extend .h2gnrl;
+        font-size: 70px;
+        padding: 40px;
+    }
+
+    p{
+        font-size: 25px;
+        padding: 30px;
+    }
+}
+
+
