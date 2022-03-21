@@ -6,17 +6,6 @@
 @import"./footer";
 @import"./mediaqueries";
 
-/*MIXIN*/
-@mixin botones($FondoColor, $ColorLetra) {
-    background-color: $FondoColor;
-    color: $ColorLetra;
-    width: 240px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-}
-
 /*EXTEND*/
 .h2gnrl{
     text-align: center;
