@@ -23,10 +23,7 @@
         padding: 20px;
     }
 
-    li{
-        font-size: 25px;
-        padding: 10px
-    }
+
 }
 .img_servicios{
     grid-area: img_servicios;
@@ -44,3 +41,30 @@
     grid-area: lista3;
 }
 
+.card{
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(66, 65, 65); 
+    box-shadow: 0 12px 16px rgba(0,0,0,2);
+    h4{
+        @extend .list_catering;
+        text-align: center;
+    }
+
+    li{
+        @extend .list_catering;
+        list-style-type: circle;
+        font-size: 25px;
+        padding: 10px; 
+    }
+
+    li:nth-child(even){
+        color: white;
+    }
+
+    p{
+        text-align: center;
+        font-size: 20px;
+        color: white;
+    }
+}

@@ -16,12 +16,14 @@
     img{
         height: 90%; 
         width: 90%;
+        box-shadow: 0 10px 14px rgba(0,0,0,1);
     }
 
     h2{
         @extend .h2gnrl;
         padding: 100px;
         font-size: 75px;
+        
     }
 }
 

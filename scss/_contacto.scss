@@ -1,14 +1,3 @@
-/*MIXIN*/
-@mixin botones($FondoColor, $ColorLetra) {
-    background-color: $FondoColor;
-    color: $ColorLetra;
-    width: 240px;
-    padding: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 10px;
-}
-
 .contacto{
     display: flex;
     justify-content: space-between;
@@ -26,20 +15,31 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     border: solid  grey 15px;
-}
-.mapa{
-    margin-right: 100px;
-    padding: 30px;
+
+    h2{
+        color: rgb(54, 54, 54);
+        text-align: center;
+    }
 }
 
 .cajaform:focus{
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .botonEnviar{
-    @include botones(red, yellow);
+    background-color: red;
+    color: yellow;
+    width: 240px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.botonLimpiar{
-    @include botones(blue,white)
+.botonEnviar:hover{
+    background-color: gray;
+}
+
+.mapa{
+    margin-right: 100px;
+    padding: 30px;
 }

@@ -159,29 +159,34 @@ body{
     }
     .formulario{
         grid-area: formulario;
-    }
-    .formulario{
         background-color: orange;
         justify-content: center;
-        font-size: 15px;
+        font-size: 12px;
         font-family: Arial, Helvetica, sans-serif;
         color: white;
-        border: solid  grey 5px;
+        border: solid  grey 6px;
+
+        h2{
+            color: rgb(54, 54, 54);
+            text-align: center;    
+        }
     }
-    .cajaform:focus{
-        font-size: 10px;
-    }
-    .boton{
-        background-color: rgb(122, 118, 118);
-        width: 100px;
+    .botonEnviar{
+        background-color: red;
+        color: yellow;
+        width: 80px;
         padding: 10px;
-        font-size: 10px;
+        font-size: 8px;
         font-family: Arial, Helvetica, sans-serif;
-        margin-bottom: 10px;
-        color: white;
     }
+
     .boton:hover{
-        background-color: black;
+        background-color: grey;
+    }
+
+    .mapa{
+        width: 100%;
+        height: auto;
     }
     
 
