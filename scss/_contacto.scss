@@ -1,24 +1,27 @@
+
 .contacto{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin: 15px 20px;
-    padding: 90px;     
+    padding: 60px;
 }
+
 .formulario{
-    display:inline-block;
-    padding: 30px;
+    border: solid grey 7px;
     background-color: orange;
-    margin: 55px;
-    margin-top: 30px;
+    width: 400px;
+    padding: 60px;
+    margin: auto;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border: solid  grey 15px;
 
     h2{
-        color: rgb(54, 54, 54);
+        color: rgb(250, 17, 17);
         text-align: center;
+        font-size: 40px;
     }
 }
 
@@ -29,8 +32,8 @@
 .botonEnviar{
     background-color: red;
     color: yellow;
-    width: 240px;
-    padding: 10px;
+    width: 245px;
+    padding: 15px;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -40,6 +43,6 @@
 }
 
 .mapa{
-    margin-right: 100px;
-    padding: 30px;
+    margin: auto;
+    padding: 20px;
 }

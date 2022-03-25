@@ -6,24 +6,25 @@
 
 .contacto {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   margin: 15px 20px;
-  padding: 90px; }
+  padding: 60px; }
 
 .formulario {
-  display: inline-block;
-  padding: 30px;
+  border: solid grey 7px;
   background-color: orange;
-  margin: 55px;
-  margin-top: 30px;
+  width: 400px;
+  padding: 60px;
+  margin: auto;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  border: solid  grey 15px; }
+  color: white; }
   .formulario h2 {
-    color: #363636;
-    text-align: center; }
+    color: #fa1111;
+    text-align: center;
+    font-size: 40px; }
 
 .cajaform:focus {
   font-size: 23px; }
@@ -31,8 +32,8 @@
 .botonEnviar {
   background-color: red;
   color: yellow;
-  width: 240px;
-  padding: 10px;
+  width: 245px;
+  padding: 15px;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif; }
 
@@ -40,8 +41,8 @@
   background-color: gray; }
 
 .mapa {
-  margin-right: 100px;
-  padding: 30px; }
+  margin: auto;
+  padding: 20px; }
 
 .nosotros {
   display: flex;
@@ -49,11 +50,10 @@
   justify-content: center;
   padding: 20px;
   margin: 30px; }
-
-.nosotros img {
-  width: 600px;
-  height: 600px;
-  box-shadow: 0 15px 15px black; }
+  .nosotros img {
+    width: 600px;
+    height: 600px;
+    box-shadow: 0 15px 15px black; }
 
 .nosotrosTexto {
   max-width: 700px; }
@@ -118,7 +118,7 @@
     display: flex;
     justify-content: center; }
   .servicios h2 {
-    font-size: 50px;
+    font-size: 60px;
     padding: 20px; }
 
 .img_servicios {
@@ -173,13 +173,19 @@ footer {
   /*TITULO*/
   .titulo {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: #d4d1d1;
     text-align: center;
     background-image: linear-gradient(to left, #fc4a1a, #f7b733); }
   /*BODY*/
   body {
     background-color: #d4d1d1; }
+  /* INDEX */
+  .carousel-inner img {
+    height: 300px;
+    width: 300px !important;
+    padding: 20px;
+    margin: auto !important; }
   /*NOSOTROS*/
   .nosotros {
     display: flex;
@@ -188,25 +194,36 @@ footer {
     justify-content: center;
     padding: 20px;
     margin: 30px; }
-  .nosotros img {
-    width: 400px;
-    height: 400px; }
+    .nosotros img {
+      width: 400px;
+      height: 400px; }
   .nosotrosTexto {
     max-width: 600px; }
-  .nosotrosTexto h2 {
-    font-size: 50px;
-    text-align: center;
-    padding: 40px; }
-  .nosotrosTexto p {
-    font-size: 25px;
-    padding: 30px; }
+    .nosotrosTexto h2 {
+      font-size: 50px;
+      text-align: center;
+      padding: 40px; }
+    .nosotrosTexto p {
+      font-size: 25px;
+      padding: 15px; }
   /*PRODUCTOS*/
   .productos {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "panaderia" "panaderia_imagen" "confiteria" "confiteria_imagen" "pasteleria" "pasteleria_imagen" "salado" "salado_imagen"; }
-  .productos {
+    grid-template-areas: "panaderia" "panaderia_imagen" "confiteria" "confiteria_imagen" "pasteleria" "pasteleria_imagen" "salado" "salado_imagen";
     justify-content: center; }
+    .productos div {
+      display: flex;
+      justify-content: center;
+      padding: 30px;
+      margin: 25px; }
+      .productos div img {
+        height: 70%;
+        width: 70%; }
+      .productos div h2 {
+        padding: 100px;
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   .panaderia {
     grid-area: panaderia; }
   .panaderia_imagen {
@@ -223,25 +240,20 @@ footer {
     grid-area: salado; }
   .salado_imagen {
     grid-area: salado_imagen; }
-  .productos div {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    margin: 25px; }
-  .productos div img {
-    height: 60%;
-    width: 60%; }
-  .productos div h2 {
-    padding: 100px;
-    font-size: 50px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   /*SERVICIOS*/
   .servicios {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-areas: "img_servicios" "catering" "lista1" "lista2" "lista3"; }
-  .servicios {
+    grid-template-areas: "img_servicios" "catering" "lista1" "lista2" "lista3";
     justify-content: center; }
+    .servicios img {
+      width: 100%; }
+    .servicios h2 {
+      font-size: 50px;
+      padding: 20px; }
+    .servicios li {
+      font-size: 15px;
+      padding: 20px; }
   .img_servicios {
     grid-area: img_servicios; }
   .catering {
@@ -252,33 +264,28 @@ footer {
     grid-area: lista2; }
   .lista3 {
     grid-area: lista3; }
-  .servicios img {
-    width: 100%; }
-  .servicios h2 {
-    font-size: 20px;
-    padding: 20px; }
-  .servicios li {
-    font-size: 15px;
-    padding: 20px; }
   /*CONTACTO*/
   .contacto {
     display: grid;
-    grid-template-areas: "mapa" "formulario"; }
-  .contacto {
+    grid-template-areas: "mapa" "formulario";
     justify-content: center; }
   .mapa {
-    grid-area: mapa; }
+    grid-area: mapa;
+    width: 100%;
+    height: auto; }
   .formulario {
-    grid-area: formulario;
+    border: solid grey 6px;
     background-color: orange;
-    justify-content: center;
+    width: 300px;
+    padding: 60px;
+    margin: 40px;
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    border: solid  grey 6px; }
+    color: white; }
     .formulario h2 {
-      color: #363636;
-      text-align: center; }
+      color: #fa1111;
+      text-align: center;
+      font-size: 25px; }
   .botonEnviar {
     background-color: red;
     color: yellow;
@@ -288,9 +295,6 @@ footer {
     font-family: Arial, Helvetica, sans-serif; }
   .boton:hover {
     background-color: grey; }
-  .mapa {
-    width: 100%;
-    height: auto; }
   /*FOOTER*/
   footer {
     background: #ff0303;
@@ -299,15 +303,15 @@ footer {
     justify-content: center;
     padding: 40px;
     font-size: 15px; }
-  footer a {
-    text-decoration: none;
-    color: yellow;
-    font-size: 15px; } }
+    footer a {
+      text-decoration: none;
+      color: yellow;
+      font-size: 15px; } }
 
 /*EXTEND*/
 .h2gnrl, .nosotrosTexto h2, .productos h2, .servicios h2 {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; }
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
 
 .list_catering, .card h4, .card li {
   color: #d65d07;
@@ -320,8 +324,8 @@ footer {
 /*TITULO*/
 .titulo {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
   color: #d4d1d1;
+  font-size: 100px;
   text-align: center;
   background-image: linear-gradient(to left, #fc4a1a, #f7b733); }
 
